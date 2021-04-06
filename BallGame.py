@@ -1,7 +1,7 @@
 import pygame
 import os
 import math
-import Ball
+#import Ball
 
 WIDTH, HEIGHT = 1200, 700
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -10,7 +10,7 @@ pygame.display.set_caption("FIRST Physics!")
 
 WHITE = (255, 255, 255)
 
-FPS = 60
+FPS = 120
 
 GRAVITY = 1
 
@@ -20,12 +20,12 @@ BALL_ONE_IMG = pygame.image.load(os.path.join('Assets', 'ball.png'))
 BALL_ONE_WIDTH = 100
 BALL_ONE_HEIGHT = 100
 
-BALL_ONE_X_NOT = 550
+BALL_ONE_X_NOT = 400
 BALL_ONE_Y_NOT = 300
 BallOnePosition = pygame.math.Vector2(BALL_ONE_X_NOT, BALL_ONE_Y_NOT)
 
-BALL_ONE_X_VEL = 6
-BALL_ONE_Y_VEL = -20
+BALL_ONE_X_VEL = 30
+BALL_ONE_Y_VEL = -25
 BallOneVelocity = pygame.math.Vector2(BALL_ONE_X_VEL, BALL_ONE_Y_VEL)
 
 
@@ -90,7 +90,7 @@ def main():
     ball2 = pygame.Rect(BALL_TWO_X_NOT, BALL_TWO_Y_NOT,
                         BALL_TWO_WIDTH, BALL_TWO_HEIGHT)
 
-    ball3 =
+    # ball3 =
 
     clock = pygame.time.Clock()
     run = True
