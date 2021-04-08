@@ -10,7 +10,7 @@ pygame.display.set_caption("FIRST Physics!")
 
 WHITE = (255, 255, 255)
 
-FPS = 120
+FPS = 60
 
 GRAVITY = 1
 
@@ -24,7 +24,7 @@ BALL_ONE_X_NOT = 400
 BALL_ONE_Y_NOT = 300
 BallOnePosition = pygame.math.Vector2(BALL_ONE_X_NOT, BALL_ONE_Y_NOT)
 
-BALL_ONE_X_VEL = 30
+BALL_ONE_X_VEL = 10
 BALL_ONE_Y_VEL = -25
 BallOneVelocity = pygame.math.Vector2(BALL_ONE_X_VEL, BALL_ONE_Y_VEL)
 
